@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+<defs>
+<linearGradient id="gradTeal" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#00A6B4"/><stop offset="1" stop-color="#006E86"/></linearGradient>
+<linearGradient id="gradPurple" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#7F4BDB"/><stop offset="1" stop-color="#4A29A5"/></linearGradient>
+<filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0B153B" flood-opacity="0.08"/></filter>
+</defs>
+<rect x="0" y="0" width="1536" height="1024" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<circle cx="930" cy="490" r="470" fill="#F6FAFC" opacity="0.65"/>
+<rect x="26" y="17" width="145" height="34" rx="7" fill="#071B4D" stroke="#071B4D" stroke-width="1.2" /><text x="98.5" y="40" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle"><tspan x="98.5" dy="0">DIAGRAM 2 OF 2</tspan></text>
+<text x="26" y="105" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="56" font-weight="800" fill="#071B4D" text-anchor="start"><tspan x="26" dy="0">Governing the Three Boundaries</tspan></text>
+<text x="26" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600" fill="#5D6472" text-anchor="start"><tspan x="26" dy="0">Controls and governance gates at each boundary.</tspan></text>
+<rect x="1135" y="25" width="370" height="105" rx="10" fill="white" stroke="#B8C9DA" stroke-width="1.2" filter="url(#softShadow)"/>
+<path d="M1215 57 a28 28 0 0 0 -18 50 v14 h36 v-14 a28 28 0 0 0 -18 -50" fill="none" stroke="#007D8F" stroke-width="3"/><path d="M1199 130 h32 M1203 140 h24" stroke="#007D8F" stroke-width="3"/><path d="M1215 39 v-16 M1184 48 l-12 -12 M1246 48 l12 -12 M1174 86 h-18 M1274 86 h18" stroke="#007D8F" stroke-width="3" stroke-linecap="round"/>
+<text x="1250" y="72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#071B4D" text-anchor="start"><tspan x="1250" dy="0">Boundaries name the risk.</tspan></text>
+<text x="1250" y="105" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="1250" dy="0">Controls govern it.</tspan></text>
+<rect x="26" y="174" width="1484" height="684" rx="9" fill="white" stroke="#C9D8E6" stroke-width="1.2" filter="url(#softShadow)"/>
+<rect x="26" y="174" width="410" height="68" rx="7" fill="#071B4D" stroke="#071B4D" stroke-width="0" />
+<text x="231.0" y="204" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="white" text-anchor="middle"><tspan x="231.0" dy="0">BOUNDARY</tspan></text>
+<rect x="436" y="174" width="480" height="68" rx="7" fill="#071B4D" stroke="#071B4D" stroke-width="0" />
+<text x="676.0" y="204" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="white" text-anchor="middle"><tspan x="676.0" dy="0">CRITICAL CONTROL</tspan></text>
+<text x="676.0" y="229" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="500" fill="white" text-anchor="middle"><tspan x="676.0" dy="0">What we enforce</tspan></text>
+<rect x="916" y="174" width="594" height="68" rx="7" fill="#071B4D" stroke="#071B4D" stroke-width="0" />
+<text x="1213.0" y="204" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="white" text-anchor="middle"><tspan x="1213.0" dy="0">GOVERNANCE GATE</tspan></text>
+<text x="1213.0" y="229" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="500" fill="white" text-anchor="middle"><tspan x="1213.0" dy="0">The decision we need to answer</tspan></text>
+<line x1="436" y1="174" x2="436" y2="858" stroke="#D7E5EF" stroke-width="1"/>
+<line x1="916" y1="174" x2="916" y2="858" stroke="#D7E5EF" stroke-width="1"/>
+<line x1="26" y1="447" x2="1510" y2="447" stroke="#D7E5EF" stroke-width="1"/>
+<line x1="26" y1="652" x2="1510" y2="652" stroke="#D7E5EF" stroke-width="1"/>
+<circle cx="84" cy="302" r="28" fill="url(#gradTeal)"/><text x="84" y="311" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" fill="white" text-anchor="middle"><tspan x="84" dy="0">1</tspan></text>
+<text x="156" y="288" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="156" dy="0">Boundary 1</tspan></text>
+<text x="156" y="322" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#071B4D" text-anchor="start"><tspan x="156" dy="0">Invocation</tspan></text>
+<text x="156" y="362" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="156" dy="0">AI Agent → MCP Server</tspan></text>
+<rect x="116" y="388" width="275" height="42" rx="8" fill="#F1F7F9" stroke="#DCE8F0" stroke-width="1" />
+<text x="141" y="416" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="141" dy="0">Risk:</tspan></text>
+<text x="194" y="416" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="194" dy="0">Untrusted invocation</tspan></text>
+<circle cx="526" cy="334" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M 526 298 L 558 312 L 551 358 Q 526 376 501 358 L 494 312 Z" fill="none" stroke="#007D8F" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="526" cy="328" r="7" fill="#007D8F"/><path d="M 526 336 L 526 357" stroke="#007D8F" stroke-width="5" stroke-linecap="round"/>
+
+<text x="611" y="302" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="611" dy="0">Per-tool</tspan><tspan x="611" dy="35.0">Authorization</tspan></text>
+<text x="611" y="370" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="611" dy="0">Only the right agent,</tspan><tspan x="611" dy="25.0">under the right conditions,</tspan><tspan x="611" dy="25.0">can invoke the right tool.</tspan></text>
+<circle cx="1001" cy="334" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<rect x="973" y="298" width="56" height="72" rx="7" fill="none" stroke="#007D8F" stroke-width="4"/>
+<path d="M 989 292 H 1013 Q 1017 292 1017 298 V 304 H 985 V 298 Q 985 292 989 292" fill="white" stroke="#007D8F" stroke-width="4"/>
+<path d="M 988 324 l7 7 l16-17" fill="none" stroke="#007D8F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 988 346 l7 7 l16-17" fill="none" stroke="#007D8F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="1076" y="292" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="1076" dy="0">Can this agent invoke this tool,</tspan><tspan x="1076" dy="28.75">for this incident, under these</tspan><tspan x="1076" dy="28.75">conditions?</tspan></text>
+<circle cx="1081" cy="376" r="2.6" fill="#071B4D"/>
+<text x="1096" y="381" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Is the tool allowed?</tspan></text>
+<circle cx="1081" cy="396" r="2.6" fill="#071B4D"/>
+<text x="1096" y="401" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Is the context permitted?</tspan></text>
+<circle cx="1081" cy="416" r="2.6" fill="#071B4D"/>
+<text x="1096" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Is the identity authorized?</tspan></text>
+<circle cx="1081" cy="436" r="2.6" fill="#071B4D"/>
+<text x="1096" y="441" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Are limits and constraints in place?</tspan></text>
+<circle cx="84" cy="507" r="28" fill="url(#gradTeal)"/><text x="84" y="516" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" fill="white" text-anchor="middle"><tspan x="84" dy="0">2</tspan></text>
+<text x="156" y="493" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="156" dy="0">Boundary 2</tspan></text>
+<text x="156" y="527" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#071B4D" text-anchor="start"><tspan x="156" dy="0">Delegated Execution</tspan></text>
+<text x="156" y="567" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="156" dy="0">MCP Server → Enterprise Systems</tspan></text>
+<rect x="116" y="593" width="275" height="42" rx="8" fill="#F1F7F9" stroke="#DCE8F0" stroke-width="1" />
+<text x="141" y="621" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="141" dy="0">Risk:</tspan></text>
+<text x="194" y="621" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="194" dy="0">Over-privileged execution</tspan></text>
+<circle cx="526" cy="539" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<rect x="496" y="535" width="60" height="45" rx="8" fill="#007D8F" fill-opacity="0.9"/>
+<path d="M 504 535 v -18 a22 22 0 0 1 44 0 v18" fill="none" stroke="#007D8F" stroke-width="8" stroke-linecap="round"/>
+<circle cx="526" cy="555" r="5" fill="white"/><path d="M 526 561 v10" stroke="white" stroke-width="4" stroke-linecap="round"/>
+
+<text x="611" y="507" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="611" dy="0">Context-Aware</tspan><tspan x="611" dy="35.0">Least Privilege</tspan></text>
+<text x="611" y="575" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="611" dy="0">The tool can access only the</tspan><tspan x="611" dy="25.0">minimum resources needed</tspan><tspan x="611" dy="25.0">for the approved execution.</tspan></text>
+<circle cx="1001" cy="539" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M 1001 497 L 1025 521 L 1001 545 L 977 521 Z" fill="none" stroke="#007D8F" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 1001 545 V 569" stroke="#007D8F" stroke-width="5" stroke-linecap="round"/>
+<path d="M 1001 569 H 969 V 585" stroke="#007D8F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1001 569 H 1033 V 585" stroke="#007D8F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="969" cy="591" r="8" fill="white" stroke="#007D8F" stroke-width="5"/><circle cx="1033" cy="591" r="8" fill="white" stroke="#007D8F" stroke-width="5"/>
+
+<text x="1076" y="497" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="1076" dy="0">What enterprise actions</tspan><tspan x="1076" dy="28.75">can occur without approval?</tspan></text>
+<circle cx="1081" cy="581" r="2.6" fill="#071B4D"/>
+<text x="1096" y="586" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Which systems and data are accessible?</tspan></text>
+<circle cx="1081" cy="601" r="2.6" fill="#071B4D"/>
+<text x="1096" y="606" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What operations are allowed?</tspan></text>
+<circle cx="1081" cy="621" r="2.6" fill="#071B4D"/>
+<text x="1096" y="626" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What requires approval or escalation?</tspan></text>
+<circle cx="1081" cy="641" r="2.6" fill="#071B4D"/>
+<text x="1096" y="646" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">Is there audit lineage across the chain?</tspan></text>
+<circle cx="84" cy="712" r="28" fill="url(#gradPurple)"/><text x="84" y="721" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" fill="white" text-anchor="middle"><tspan x="84" dy="0">3</tspan></text>
+<text x="156" y="698" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#5A33B5" text-anchor="start"><tspan x="156" dy="0">Boundary 3</tspan></text>
+<text x="156" y="732" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#5A33B5" text-anchor="start"><tspan x="156" dy="0">Context Return</tspan></text>
+<text x="156" y="772" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="156" dy="0">Tool Output → Model Context</tspan></text>
+<rect x="116" y="798" width="275" height="42" rx="8" fill="#F3EFFB" stroke="#DCE8F0" stroke-width="1" />
+<text x="141" y="826" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#5A33B5" text-anchor="start"><tspan x="141" dy="0">Risk:</tspan></text>
+<text x="194" y="826" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="194" dy="0">Unsafe context return</tspan></text>
+<circle cx="526" cy="744" r="62" fill="#5A33B5" fill-opacity="0.08" stroke="#5A33B5" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M 490 712 H 562 L 536 742 V 779 L 516 789 V 742 Z" fill="none" stroke="#5A33B5" stroke-width="5" stroke-linejoin="round"/>
+
+<text x="611" y="712" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#5A33B5" text-anchor="start"><tspan x="611" dy="0">Output Redaction</tspan><tspan x="611" dy="35.0">Before Context Re-entry</tspan></text>
+<text x="611" y="780" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="611" dy="0">Only safe, necessary, and</tspan><tspan x="611" dy="25.0">allowed information returns</tspan><tspan x="611" dy="25.0">into model context.</tspan></text>
+<circle cx="1001" cy="744" r="62" fill="#5A33B5" fill-opacity="0.08" stroke="#5A33B5" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M 979 708 H 1023 Q 1031 708 1031 716 V 780 Q 1031 788 1023 788 H 979 Q 971 788 971 780 V 716 Q 971 708 979 708" fill="none" stroke="#5A33B5" stroke-width="4"/>
+<path d="M 991 701 H 1011 V 713 H 991 Z" fill="white" stroke="#5A33B5" stroke-width="4"/>
+<path d="M 987 742 l7 7 l16-17" fill="none" stroke="#5A33B5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 987 764 l7 7 l16-17" fill="none" stroke="#5A33B5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1034 747 L 1057 757 L 1052 787 Q 1034 798 1017 787 L 1013 757 Z" fill="white" stroke="#5A33B5" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 1024 771 l8 8 l16-19" fill="none" stroke="#5A33B5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="1076" y="702" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#5A33B5" text-anchor="start"><tspan x="1076" dy="0">What information may return</tspan><tspan x="1076" dy="28.75">into future model reasoning?</tspan></text>
+<circle cx="1081" cy="786" r="2.6" fill="#071B4D"/>
+<text x="1096" y="791" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What data is allowed back?</tspan></text>
+<circle cx="1081" cy="806" r="2.6" fill="#071B4D"/>
+<text x="1096" y="811" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What must be redacted or masked?</tspan></text>
+<circle cx="1081" cy="826" r="2.6" fill="#071B4D"/>
+<text x="1096" y="831" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What provenance and tenancy rules apply?</tspan></text>
+<circle cx="1081" cy="846" r="2.6" fill="#071B4D"/>
+<text x="1096" y="851" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1096" dy="0">What context boundaries are enforced?</tspan></text>
+<rect x="26" y="882" width="1145" height="116" rx="9" fill="white" stroke="#C9D8E6" stroke-width="1.1" filter="url(#softShadow)"/>
+<text x="596" y="894" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#071B4D" text-anchor="middle"><tspan x="596" dy="0">MCP FOUNDATION LAYERS  —  BUILT INTO EVERY BOUNDARY</tspan></text>
+<line x1="400" y1="914" x2="400" y2="986" stroke="#C9D8E6" stroke-width="1.4"/>
+<line x1="770" y1="914" x2="770" y2="986" stroke="#C9D8E6" stroke-width="1.4"/>
+<circle cx="82" cy="948" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M82 920 L110 932 L104 972 Q82 986 60 972 L54 932 Z" fill="none" stroke="#007D8F" stroke-width="3"/><circle cx="82" cy="948" r="8" fill="#071B4D"/>
+<text x="150" y="938" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="150" dy="0">AUTHORIZATION</tspan></text>
+<text x="150" y="962" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="150" dy="0">Verify identity. Enforce policy.</tspan><tspan x="150" dy="17.5">Limit scope by user, role,</tspan><tspan x="150" dy="17.5">tenant, service, environment.</tspan></text>
+<circle cx="452" cy="948" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<path d="M452 920 L480 932 L474 972 Q452 986 430 972 L424 932 Z" fill="none" stroke="#007D8F" stroke-width="3"/><path d="M440 948 l9 9 l18-22" fill="none" stroke="#071B4D" stroke-width="4" stroke-linecap="round"/>
+<text x="520" y="938" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="520" dy="0">LEAST PRIVILEGE</tspan></text>
+<text x="520" y="962" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="520" dy="0">Minimum access by design.</tspan><tspan x="520" dy="17.5">Scoped credentials and</tspan><tspan x="520" dy="17.5">tool / data access.</tspan></text>
+<circle cx="824" cy="948" r="62" fill="#007D8F" fill-opacity="0.08" stroke="#007D8F" stroke-opacity="0.22" stroke-width="1"/>
+<rect x="802" y="924" width="36" height="42" rx="4" fill="none" stroke="#007D8F" stroke-width="3"/><circle cx="842" cy="968" r="16" fill="none" stroke="#071B4D" stroke-width="3"/><path d="M854 980 l15 15" stroke="#071B4D" stroke-width="4" stroke-linecap="round"/>
+<text x="895" y="938" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#007D8F" text-anchor="start"><tspan x="895" dy="0">AUDIT &amp; OBSERVABILITY</tspan></text>
+<text x="895" y="962" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="895" dy="0">End-to-end lineage of every</tspan><tspan x="895" dy="17.5">invocation and response.</tspan><tspan x="895" dy="17.5">Immutable logs. Continuous visibility.</tspan></text>
+<line x1="1187" y1="890" x2="1187" y2="994" stroke="#C9D8E6" stroke-width="1.5"/>
+<path d="M1210 976 L1260 882 L1310 976 H1280 L1260 936 L1240 976 Z" fill="url(#gradTeal)" opacity="0.95"/>
+<path d="M1260 882 L1310 976" stroke="#5A33B5" stroke-width="9" opacity="0.65"/>
+<text x="1320" y="942" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="500" fill="#071B4D" text-anchor="start"><tspan x="1320" dy="0">Aara Minds</tspan></text>
+<text x="1322" y="972" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#007D8F" text-anchor="start"><tspan x="1322" dy="0">Leadership • AI • Engineering</tspan></text>
+</svg>
