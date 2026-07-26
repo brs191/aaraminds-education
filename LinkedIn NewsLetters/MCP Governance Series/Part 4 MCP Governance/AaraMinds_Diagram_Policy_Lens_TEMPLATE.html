@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AaraMinds — Policy Lens Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  ==========================================================================
+  AaraMinds Diagram Template — POLICY LENS (Diagram 2 of 3)
+  Same token system + header/footer lockups as the Architecture Lens.
+  Tier ramp is semantic: Tier1 teal -> Tier2 blue -> Tier3 amber -> Tier4 orange -> Tier5 red.
+  (Green is reserved for outcomes/success, never a tier badge.)
+  Edit tokens in :root; edit labels in the SVG; screenshot at 2x or Print > PDF.
+  Companion spec: AaraMinds_Diagram_Style_Guide_v1.0.md
+  ==========================================================================
+-->
+<style>
+  :root{
+    --canvas:#FFFFFF; --surface:#F6F8FB; --ink:#1E2A4A; --slate:#5A6480;
+    --teal:#159E9E; --blue:#2F6FD0; --purple:#6E45A8; --green:#2E9E63;
+    --amber:#E1912E; --orange:#DD7A33; --red:#D6473F; --hair:#D9E0EA; --road:#E7F2F2;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EEF1F5;font-family:"Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);}
+  .bar{max-width:1400px;margin:22px auto 0;padding:12px 18px;background:#fff;border:1px solid var(--hair);border-radius:12px;font-size:13px;color:var(--slate);line-height:1.5;}
+  .bar b{color:var(--ink);}
+  .card{max-width:1400px;margin:16px auto 40px;background:var(--canvas);border:1px solid var(--hair);border-radius:16px;box-shadow:0 10px 34px rgba(30,42,74,.10);overflow:hidden;}
+  svg{display:block;width:100%;height:auto;}
+  .kicker{font:600 20px "Inter",sans-serif;letter-spacing:1.6px;fill:var(--slate);}
+  .title{font:800 44px "Inter",sans-serif;fill:var(--ink);}
+  .subtitle{font:500 25px "Inter",sans-serif;font-style:italic;fill:var(--slate);}
+  .th{font:600 13px "Inter",sans-serif;letter-spacing:1px;fill:var(--slate);}
+  .catname{font:700 21px "Inter",sans-serif;fill:var(--ink);}
+  .ex{font:500 16px "Inter",sans-serif;fill:var(--slate);}
+  .ctrl{font:500 15.5px "Inter",sans-serif;fill:var(--ink);}
+  .badge{font:700 22px "Inter",sans-serif;fill:#fff;}
+  .principle{font:700 20px "Inter",sans-serif;fill:var(--ink);}
+  .wordmark{font:800 22px "Inter",sans-serif;fill:var(--ink);}
+  .tag{font:600 12.5px "Inter",sans-serif;letter-spacing:.5px;fill:var(--slate);}
+</style>
+</head>
+<body>
+
+<div class="bar"><b>AaraMinds diagram template — Policy Lens.</b> Edit colors in <b>:root</b>, labels in the SVG, then screenshot at 2× or Print → PDF. This bar is not part of the diagram.</div>
+
+<div class="card">
+<svg viewBox="0 0 1600 1030" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AaraMinds Policy Lens">
+  <rect x="0" y="0" width="1600" height="1030" fill="var(--canvas)"/>
+
+  <!-- HEADER -->
+  <text class="kicker" x="800" y="52" text-anchor="middle">MCP GOVERNANCE SERIES — PART 4</text>
+  <text class="title"  x="800" y="98" text-anchor="middle">DIAGRAM 2 of 3 — POLICY LENS</text>
+  <line x1="712" y1="116" x2="888" y2="116" stroke="var(--teal)" stroke-width="3" stroke-linecap="round"/>
+  <text class="subtitle" x="800" y="150" text-anchor="middle">Policy tiers for MCP tools</text>
+
+  <!-- TABLE HEADER -->
+  <text class="th" x="128" y="212" text-anchor="middle">TIER</text>
+  <text class="th" x="240" y="212">CATEGORY</text>
+  <text class="th" x="580" y="212">EXAMPLES</text>
+  <text class="th" x="980" y="212">CONTROL / GOVERNANCE</text>
+  <line x1="60" y1="230" x2="1540" y2="230" stroke="var(--hair)" stroke-width="1.5"/>
+
+  <!-- ROW 1 — Read-only (teal) -->
+  <rect x="60" y="264" width="6" height="92" rx="3" fill="var(--teal)"/>
+  <circle cx="128" cy="310" r="26" fill="var(--teal)"/><text class="badge" x="128" y="318" text-anchor="middle">1</text>
+  <text class="catname" x="200" y="318">Read-only</text>
+  <text class="ex" x="580" y="316">Docs and metadata lookup</text>
+  <circle cx="982" cy="285" r="3" fill="var(--teal)"/><text class="ctrl" x="996" y="290">Authentication</text>
+  <circle cx="982" cy="311" r="3" fill="var(--teal)"/><text class="ctrl" x="996" y="316">Registration</text>
+  <circle cx="982" cy="337" r="3" fill="var(--teal)"/><text class="ctrl" x="996" y="342">Audit</text>
+  <line x1="60" y1="370" x2="1540" y2="370" stroke="var(--hair)" stroke-width="1"/>
+
+  <!-- ROW 2 — Sensitive read (blue) -->
+  <rect x="60" y="384" width="6" height="92" rx="3" fill="var(--blue)"/>
+  <circle cx="128" cy="430" r="26" fill="var(--blue)"/><text class="badge" x="128" y="438" text-anchor="middle">2</text>
+  <text class="catname" x="200" y="438">Sensitive read</text>
+  <text class="ex" x="580" y="436">Production logs, case lookup</text>
+  <circle cx="982" cy="405" r="3" fill="var(--blue)"/><text class="ctrl" x="996" y="410">Scoped identity</text>
+  <circle cx="982" cy="431" r="3" fill="var(--blue)"/><text class="ctrl" x="996" y="436">Output redaction (server-side)</text>
+  <circle cx="982" cy="457" r="3" fill="var(--blue)"/><text class="ctrl" x="996" y="462">Lineage</text>
+  <line x1="60" y1="490" x2="1540" y2="490" stroke="var(--hair)" stroke-width="1"/>
+
+  <!-- ROW 3 — Write / update (amber) -->
+  <rect x="60" y="504" width="6" height="92" rx="3" fill="var(--amber)"/>
+  <circle cx="128" cy="550" r="26" fill="var(--amber)"/><text class="badge" x="128" y="558" text-anchor="middle">3</text>
+  <text class="catname" x="200" y="558">Write / update</text>
+  <text class="ex" x="580" y="556">Ticket or status change</text>
+  <circle cx="982" cy="525" r="3" fill="var(--amber)"/><text class="ctrl" x="996" y="530">Approval rule</text>
+  <circle cx="982" cy="551" r="3" fill="var(--amber)"/><text class="ctrl" x="996" y="556">Audit trail</text>
+  <circle cx="982" cy="577" r="3" fill="var(--amber)"/><text class="ctrl" x="996" y="582">Rollback path</text>
+  <line x1="60" y1="610" x2="1540" y2="610" stroke="var(--hair)" stroke-width="1"/>
+
+  <!-- ROW 4 — Privileged (orange) -->
+  <rect x="60" y="624" width="6" height="92" rx="3" fill="var(--orange)"/>
+  <circle cx="128" cy="670" r="26" fill="var(--orange)"/><text class="badge" x="128" y="678" text-anchor="middle">4</text>
+  <text class="catname" x="200" y="678">Privileged</text>
+  <text class="ex" x="580" y="676">Role or configuration change</text>
+  <circle cx="982" cy="645" r="3" fill="var(--orange)"/><text class="ctrl" x="996" y="650">Strong justification</text>
+  <circle cx="982" cy="671" r="3" fill="var(--orange)"/><text class="ctrl" x="996" y="676">Elevated approval</text>
+  <circle cx="982" cy="697" r="3" fill="var(--orange)"/><text class="ctrl" x="996" y="702">Full trace</text>
+  <line x1="60" y1="730" x2="1540" y2="730" stroke="var(--hair)" stroke-width="1"/>
+
+  <!-- ROW 5 — Destructive (red) -->
+  <rect x="60" y="744" width="6" height="92" rx="3" fill="var(--red)"/>
+  <circle cx="128" cy="790" r="26" fill="var(--red)"/><text class="badge" x="128" y="798" text-anchor="middle">5</text>
+  <text class="catname" x="200" y="798">Destructive</text>
+  <text class="ex" x="580" y="796">Delete, restart, deploy</text>
+  <circle cx="982" cy="765" r="3" fill="var(--red)"/><text class="ctrl" x="996" y="770">Human approval</text>
+  <circle cx="982" cy="791" r="3" fill="var(--red)"/><text class="ctrl" x="996" y="796">Rollback plan</text>
+  <circle cx="982" cy="817" r="3" fill="var(--red)"/><text class="ctrl" x="996" y="822">Incident-grade evidence</text>
+
+  <!-- CLOSING PRINCIPLE -->
+  <rect x="440" y="866" width="720" height="52" rx="26" fill="var(--surface)" stroke="var(--hair)" stroke-width="1.5"/>
+  <circle cx="486" cy="892" r="6" fill="var(--teal)"/>
+  <text class="principle" x="810" y="899" text-anchor="middle">The safe path should be proportional, not performative.</text>
+
+  <!-- FOOTER -->
+  <line x1="60" y1="978" x2="1540" y2="978" stroke="var(--hair)" stroke-width="1.5"/>
+  <text class="tag" x="60" y="1007">APPLY THE LIGHTEST CONTROL THAT FITS THE RISK</text>
+  <rect x="1300" y="982" width="36" height="36" rx="9" fill="var(--ink)"/>
+  <path d="M1309 1012 L1318 990 L1327 1012" fill="none" stroke="var(--teal)" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="1312.5" y1="1005" x2="1323.5" y2="1005" stroke="var(--teal)" stroke-width="2.6"/>
+  <text class="wordmark" x="1348" y="1001"><tspan fill="var(--ink)">Aara </tspan><tspan fill="var(--teal)">Minds</tspan></text>
+  <text class="tag" x="1349" y="1019">Leadership · AI · Engineering</text>
+</svg>
+</div>
+
+</body>
+</html>

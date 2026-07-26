@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AaraMinds — Architecture Lens Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  ==========================================================================
+  AaraMinds Diagram Template — ARCHITECTURE LENS
+  How to use:
+   1. Brand colors live in :root below. Change once, everything updates.
+   2. All labels are real <text> in the SVG — edit them directly.
+   3. To reuse for the Policy / Lifecycle lenses, copy this file and swap the
+      diagram body; header, footer, primitives strip and tokens stay identical.
+   4. To export: open in a browser and screenshot at 2x, or Print > Save as PDF.
+      (Text stays crisp because it is vector, not a raster image.)
+   5. Swap the placeholder logo mark (bottom-right) for the real Aara Minds SVG.
+  Companion spec: AaraMinds_Diagram_Style_Guide_v1.0.md
+  ==========================================================================
+-->
+<style>
+  :root{
+    --canvas:#FFFFFF; --surface:#F6F8FB; --ink:#1E2A4A; --slate:#5A6480;
+    --teal:#159E9E; --blue:#2F6FD0; --purple:#6E45A8; --green:#2E9E63;
+    --amber:#E1912E; --red:#D6473F; --hair:#D9E0EA; --road:#E7F2F2;
+    --road-line:#159E9E;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EEF1F5;font-family:"Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);}
+  .bar{max-width:1400px;margin:22px auto 0;padding:12px 18px;background:#fff;border:1px solid var(--hair);
+       border-radius:12px;font-size:13px;color:var(--slate);line-height:1.5;}
+  .bar b{color:var(--ink);}
+  .card{max-width:1400px;margin:16px auto 40px;background:var(--canvas);border:1px solid var(--hair);
+        border-radius:16px;box-shadow:0 10px 34px rgba(30,42,74,.10);overflow:hidden;}
+  svg{display:block;width:100%;height:auto;}
+  /* type scale (px == svg user units) */
+  .kicker{font:600 20px "Inter",sans-serif;letter-spacing:1.6px;fill:var(--slate);}
+  .title{font:800 44px "Inter",sans-serif;fill:var(--ink);}
+  .subtitle{font:500 25px "Inter",sans-serif;font-style:italic;fill:var(--slate);}
+  .zone{font:700 22px "Inter",sans-serif;fill:var(--ink);}
+  .boxtitle{font:700 22px "Inter",sans-serif;fill:var(--ink);}
+  .boxtitle.sm{font-size:19px;}
+  .label{font:600 17px "Inter",sans-serif;fill:var(--ink);}
+  .meta{font:500 14.5px "Inter",sans-serif;fill:var(--slate);}
+  .metateal{font:600 14.5px "Inter",sans-serif;fill:var(--teal);}
+  .chip{font:600 13.5px "Inter",sans-serif;fill:var(--ink);}
+  .gate{font:600 15px "Inter",sans-serif;fill:var(--ink);}
+  .gate .q{font-weight:500;fill:var(--slate);}
+  .wordmark{font:800 22px "Inter",sans-serif;fill:var(--ink);}
+  .tag{font:600 12.5px "Inter",sans-serif;letter-spacing:.6px;fill:var(--slate);}
+  .box{fill:var(--canvas);stroke:var(--hair);stroke-width:1.5;}
+  .panel{fill:var(--surface);stroke:var(--hair);stroke-width:1.5;}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <b>AaraMinds diagram template — Architecture Lens.</b> Edit colors in <b>:root</b>, edit labels in the SVG, then screenshot at 2× or Print → PDF.
+  This bar is not part of the diagram; it won't show if you crop to the card below.
+</div>
+
+<div class="card">
+<svg viewBox="0 0 1600 1030" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AaraMinds Architecture Lens">
+  <defs>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1E2A4A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--ink)"/>
+    </marker>
+    <marker id="arrPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--purple)"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1030" fill="var(--canvas)"/>
+
+  <!-- ================= HEADER ================= -->
+  <text class="kicker" x="800" y="52" text-anchor="middle">MCP GOVERNANCE SERIES — PART 4</text>
+  <text class="title"  x="800" y="98" text-anchor="middle">DIAGRAM 1 of 3 — ARCHITECTURE LENS</text>
+  <line x1="712" y1="116" x2="888" y2="116" stroke="var(--teal)" stroke-width="3" stroke-linecap="round"/>
+  <text class="subtitle" x="800" y="150" text-anchor="middle">Runtime architecture and trust boundaries</text>
+
+  <!-- ================= LEFT RAIL: Platform Services ================= -->
+  <rect class="panel" x="48" y="196" width="340" height="590" rx="14"/>
+  <text class="zone" x="70" y="234">Platform Services</text>
+
+  <!-- item 1 -->
+  <circle cx="80" cy="286" r="5" fill="var(--teal)"/>
+  <text class="label" x="98" y="291">Registry &amp; Discovery</text>
+  <text class="meta"  x="98" y="313">Azure API Center</text>
+  <!-- item 2 -->
+  <circle cx="80" cy="368" r="5" fill="var(--blue)"/>
+  <text class="label" x="98" y="373">Identity &amp; Access</text>
+  <text class="meta"  x="98" y="395">Entra ID · Managed Identity</text>
+  <!-- item 3 -->
+  <circle cx="80" cy="450" r="5" fill="var(--ink)"/>
+  <text class="label" x="98" y="455">Policy &amp; Controls</text>
+  <text class="meta"  x="98" y="477">Threat modeling · Approval rules</text>
+  <!-- item 4 -->
+  <circle cx="80" cy="532" r="5" fill="var(--teal)"/>
+  <text class="label" x="98" y="537">CI/CD &amp; Change Control</text>
+  <text class="meta"  x="98" y="559">GitHub Actions · OIDC</text>
+  <!-- item 5 -->
+  <circle cx="80" cy="614" r="5" fill="var(--blue)"/>
+  <text class="label" x="98" y="619">Observability</text>
+  <text class="meta"  x="98" y="641">OpenTelemetry · Azure Monitor</text>
+  <!-- item 6 -->
+  <circle cx="80" cy="696" r="5" fill="var(--ink)"/>
+  <text class="label" x="98" y="701">Evidence &amp; Audit</text>
+  <text class="meta"  x="98" y="723">Log Analytics</text>
+
+  <!-- dotted connectors rail -> spine -->
+  <line x1="388" y1="397" x2="590" y2="397" stroke="var(--hair)" stroke-width="1.5" stroke-dasharray="2 6"/>
+  <line x1="388" y1="560" x2="590" y2="560" stroke="var(--hair)" stroke-width="1.5" stroke-dasharray="2 6"/>
+
+  <!-- ================= PAVED ROAD MOTIF (signature) ================= -->
+  <rect x="588" y="196" width="424" height="452" rx="16" fill="var(--road)"/>
+  <line x1="800" y1="206" x2="800" y2="640" stroke="var(--road-line)" stroke-width="3"
+        stroke-dasharray="2 16" stroke-linecap="round" opacity="0.38"/>
+
+  <!-- ================= CENTER SPINE ================= -->
+  <!-- Agent node (no robot head: hexagon marker, purple = agent/reasoning) -->
+  <rect class="box" x="600" y="208" width="400" height="82" rx="12"/>
+  <polygon points="642,232 656,240 656,256 642,264 628,256 628,240" fill="none" stroke="var(--purple)" stroke-width="2"/>
+  <circle cx="642" cy="248" r="3.2" fill="var(--purple)"/>
+  <text class="boxtitle sm" x="682" y="244">Agent / Agent Platform</text>
+  <text class="meta" x="682" y="268">Consumes governed tools</text>
+
+  <line x1="800" y1="290" x2="800" y2="330" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+
+  <!-- Gateway = DOMINANT element: teal 2.5 border + edge bar + soft shadow -->
+  <rect x="590" y="336" width="420" height="126" rx="14" fill="var(--canvas)" stroke="var(--teal)" stroke-width="2.5" filter="url(#soft)"/>
+  <rect x="590" y="336" width="7" height="126" rx="3.5" fill="var(--teal)"/>
+  <text class="boxtitle sm" x="800" y="372" text-anchor="middle">MCP Gateway / Runtime Control Layer</text>
+  <text class="meta"     x="800" y="400" text-anchor="middle">AuthN/Z · Controls · Rate limits</text>
+  <text class="metateal" x="800" y="424" text-anchor="middle">Content safety · Approval rules · Routing · Telemetry</text>
+
+  <line x1="800" y1="462" x2="800" y2="500" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+
+  <!-- Governed MCP Servers -->
+  <rect class="box" x="600" y="504" width="400" height="124" rx="12"/>
+  <text class="boxtitle sm" x="800" y="540" text-anchor="middle">Governed MCP Servers</text>
+  <text class="meta"  x="800" y="566" text-anchor="middle">Approved tools · Contracts · Output redaction</text>
+  <text class="metateal" x="800" y="592" text-anchor="middle">Workload identity (scoped)</text>
+  <text class="meta"  x="800" y="613" text-anchor="middle">Least-privilege access to downstream systems</text>
+
+  <line x1="800" y1="628" x2="800" y2="686" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+
+  <!-- ================= ENTERPRISE SYSTEMS ================= -->
+  <rect class="panel" x="430" y="690" width="740" height="134" rx="14"/>
+  <text class="zone" x="800" y="722" text-anchor="middle">Enterprise Systems</text>
+  <!-- 6 chips -->
+  <g>
+    <rect class="box" x="448" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="501" y="777" text-anchor="middle">Data stores</text>
+    <rect class="box" x="567" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="620" y="777" text-anchor="middle">Applications</text>
+    <rect class="box" x="686" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="739" y="769" text-anchor="middle">APIs /</text>
+    <text class="chip" x="739" y="787" text-anchor="middle">Services</text>
+    <rect class="box" x="805" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="858" y="769" text-anchor="middle">Ticketing /</text>
+    <text class="chip" x="858" y="787" text-anchor="middle">ITSM</text>
+    <rect class="box" x="924" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="977" y="777" text-anchor="middle">Source repos</text>
+    <rect class="box" x="1043" y="742" width="107" height="60" rx="9"/>
+    <text class="chip" x="1096" y="769" text-anchor="middle">Deploy</text>
+    <text class="chip" x="1096" y="787" text-anchor="middle">pipelines</text>
+  </g>
+
+  <!-- ================= RIGHT: Content Safety (gateway control) ================= -->
+  <rect x="1150" y="336" width="372" height="150" rx="14" fill="var(--road)" stroke="var(--teal)" stroke-width="1.5"/>
+  <text class="boxtitle sm" x="1336" y="376" text-anchor="middle" fill="var(--teal)">Content Safety &amp;</text>
+  <text class="boxtitle sm" x="1336" y="400" text-anchor="middle" fill="var(--teal)">Injection Filtering</text>
+  <text class="meta" x="1336" y="430" text-anchor="middle">Filters harmful content &amp;</text>
+  <text class="meta" x="1336" y="450" text-anchor="middle">injection attempts</text>
+  <text class="meta" x="1336" y="470" text-anchor="middle">(gateway control)</text>
+  <!-- dotted tie gateway <-> content safety -->
+  <line x1="1010" y1="399" x2="1150" y2="399" stroke="var(--teal)" stroke-width="1.5" stroke-dasharray="2 6"/>
+
+  <!-- ================= RETURN LOOP (dashed purple) ================= -->
+  <text class="metateal" x="1284" y="236" text-anchor="middle" fill="var(--purple)">Context return — content-safety checked</text>
+  <path d="M1170 726 L1548 726 L1548 250 L1004 250" fill="none" stroke="var(--purple)"
+        stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrPurple)"/>
+
+  <!-- ================= GOVERNANCE-GATE CHIP (signature) ================= -->
+  <rect x="520" y="846" width="560" height="38" rx="19" fill="var(--surface)" stroke="var(--hair)" stroke-width="1.5"/>
+  <circle cx="546" cy="865" r="4.5" fill="var(--teal)"/>
+  <text class="gate" x="562" y="870">Governance gate: <tspan class="q">every tool call — authorized · approved · injection-checked · traced</tspan></text>
+
+  <!-- small flow legend (bottom-left free space) -->
+  <line x1="70" y1="858" x2="104" y2="858" stroke="var(--ink)" stroke-width="2.5"/>
+  <text class="meta" x="112" y="863">Primary flow</text>
+  <line x1="70" y1="882" x2="104" y2="882" stroke="var(--purple)" stroke-width="2" stroke-dasharray="7 6"/>
+  <text class="meta" x="112" y="887">Context return</text>
+
+  <!-- ================= PLATFORM PRIMITIVES STRIP ================= -->
+  <rect class="panel" x="48" y="902" width="1504" height="48" rx="12"/>
+  <text class="label" x="68" y="931">Platform Primitives (Canonical Set)</text>
+  <g>
+    <circle cx="452" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="466" y="931">Registry</text>
+    <circle cx="606" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="620" y="931">Identity</text>
+    <circle cx="754" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="768" y="931">Policy</text>
+    <circle cx="880" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="894" y="931">CI/CD</text>
+    <circle cx="1000" cy="926" r="4" fill="var(--teal)"/><text class="chip" x="1014" y="931">Content safety</text>
+    <circle cx="1188" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="1202" y="931">Observability</text>
+    <circle cx="1378" cy="926" r="4" fill="var(--ink)"/><text class="chip" x="1392" y="931">Evidence</text>
+  </g>
+
+  <!-- ================= FOOTER ================= -->
+  <line x1="48" y1="978" x2="1552" y2="978" stroke="var(--hair)" stroke-width="1.5"/>
+  <text x="48" y="1006" font-family="Inter,sans-serif" font-size="14.5">
+    <tspan font-weight="700" fill="var(--ink)">Key distinction: </tspan><tspan font-weight="500" fill="var(--slate)">content safety at the gateway · secret / PII redaction at the server</tspan>
+  </text>
+  <!-- logo lockup (replace mark with real Aara Minds SVG) -->
+  <rect x="1300" y="982" width="36" height="36" rx="9" fill="var(--ink)"/>
+  <path d="M1309 1012 L1318 990 L1327 1012" fill="none" stroke="var(--teal)" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="1312.5" y1="1005" x2="1323.5" y2="1005" stroke="var(--teal)" stroke-width="2.6"/>
+  <text class="wordmark" x="1348" y="1001"><tspan fill="var(--ink)">Aara </tspan><tspan fill="var(--teal)">Minds</tspan></text>
+  <text class="tag" x="1349" y="1019">Leadership · AI · Engineering</text>
+</svg>
+</div>
+
+</body>
+</html>

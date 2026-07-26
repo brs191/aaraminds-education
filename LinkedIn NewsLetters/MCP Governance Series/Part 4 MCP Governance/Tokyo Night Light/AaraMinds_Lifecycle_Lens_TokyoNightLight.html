@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AaraMinds — Lifecycle Lens Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  ==========================================================================
+  AaraMinds Diagram Template — LIFECYCLE LENS (Diagram 3 of 3)
+  Same token system + header/footer/primitives lockups as the other two lenses.
+  The paved-road motif runs HORIZONTALLY through the 7 steps (signature device).
+  Outcomes use green (success); operating principles use teal.
+  Edit tokens in :root; edit labels in the SVG; screenshot at 2x or Print > PDF.
+  Companion spec: AaraMinds_Diagram_Style_Guide_v1.0.md
+  ==========================================================================
+-->
+<style>
+  :root{
+    --canvas:#e1e2e7; --surface:#d9dde8; --boxfill:#eef0f6; --ink:#343b58; --slate:#565f89;
+    --teal:#118c74; --blue:#2e7de9; --cyan:#007197; --purple:#7847bd; --magenta:#9854f1; --green:#587539;
+    --amber:#8c6c3e; --orange:#b15c00; --red:#f52a65; --hair:#b4b9d1; --road:#d6ddef; --road-line:#118c74;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#c4c8da;font-family:"Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);}
+  .bar{max-width:1400px;margin:22px auto 0;padding:12px 18px;background:#fff;border:1px solid var(--hair);border-radius:12px;font-size:13px;color:var(--slate);line-height:1.5;}
+  .bar b{color:var(--ink);}
+  .card{max-width:1400px;margin:16px auto 40px;background:var(--canvas);border:1px solid var(--hair);border-radius:16px;box-shadow:0 10px 34px rgba(30,42,74,.10);overflow:hidden;}
+  svg{display:block;width:100%;height:auto;}
+  .kicker{font:600 20px "Inter",sans-serif;letter-spacing:1.6px;fill:var(--slate);}
+  .title{font:800 44px "Inter",sans-serif;fill:var(--ink);}
+  .subtitle{font:500 25px "Inter",sans-serif;font-style:italic;fill:var(--slate);}
+  .zone{font:700 20px "Inter",sans-serif;fill:var(--ink);}
+  .steplbl{font:700 16px "Inter",sans-serif;fill:var(--ink);}
+  .stepsub{font:500 13px "Inter",sans-serif;fill:var(--slate);}
+  .pitem{font:600 16px "Inter",sans-serif;fill:var(--ink);}
+  .badge{font:700 19px "Inter",sans-serif;fill:#fff;}
+  .loop{font:600 16px "Inter",sans-serif;font-style:italic;fill:var(--purple);}
+  .label{font:600 17px "Inter",sans-serif;fill:var(--ink);}
+  .chip{font:600 13.5px "Inter",sans-serif;fill:var(--ink);}
+  .wordmark{font:800 22px "Inter",sans-serif;fill:var(--ink);}
+  .tag{font:600 12.5px "Inter",sans-serif;letter-spacing:.5px;fill:var(--slate);}
+  .panel{fill:var(--surface);stroke:var(--hair);stroke-width:1.5;}
+  .box{fill:var(--boxfill);stroke:var(--hair);stroke-width:1.5;}
+</style>
+</head>
+<body>
+
+<div class="bar"><b>AaraMinds diagram template (Tokyo Night Light) — Lifecycle Lens.</b> Edit colors in <b>:root</b>, labels in the SVG, then screenshot at 2× or Print → PDF. This bar is not part of the diagram.</div>
+
+<div class="card">
+<svg viewBox="0 0 1600 1030" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AaraMinds Lifecycle Lens">
+  <defs>
+    <marker id="arrInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--ink)"/>
+    </marker>
+    <marker id="arrPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--purple)"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1600" height="1030" fill="var(--canvas)"/>
+
+  <!-- HEADER -->
+  <text class="kicker" x="800" y="52" text-anchor="middle">MCP GOVERNANCE SERIES — PART 4</text>
+  <text class="title"  x="800" y="98" text-anchor="middle">DIAGRAM 3 of 3 — LIFECYCLE LENS</text>
+  <line x1="712" y1="116" x2="888" y2="116" stroke="var(--teal)" stroke-width="3" stroke-linecap="round"/>
+  <text class="subtitle" x="800" y="150" text-anchor="middle">How a server gets on the paved road</text>
+
+  <!-- LEFT PANEL: Operating Principle -->
+  <rect class="panel" x="48" y="250" width="252" height="470" rx="14"/>
+  <text class="zone" x="70" y="292">Operating Principle</text>
+  <circle cx="76" cy="356" r="5" fill="var(--teal)"/>
+  <text class="pitem" x="94" y="352">Register before</text><text class="pitem" x="94" y="374">production</text>
+  <circle cx="76" cy="456" r="5" fill="var(--teal)"/>
+  <text class="pitem" x="94" y="452">Standardize the</text><text class="pitem" x="94" y="474">paved road</text>
+  <circle cx="76" cy="556" r="5" fill="var(--teal)"/>
+  <text class="pitem" x="94" y="552">Re-review when</text><text class="pitem" x="94" y="574">risk changes</text>
+
+  <!-- RIGHT PANEL: Governed Outcomes (green = outcomes) -->
+  <rect class="panel" x="1300" y="250" width="252" height="470" rx="14"/>
+  <text class="zone" x="1322" y="292">Governed Outcomes</text>
+  <circle cx="1328" cy="352" r="5" fill="var(--green)"/>
+  <text class="pitem" x="1346" y="357">Known inventory</text>
+  <circle cx="1328" cy="430" r="5" fill="var(--green)"/>
+  <text class="pitem" x="1346" y="426">Clear</text><text class="pitem" x="1346" y="448">accountability</text>
+  <circle cx="1328" cy="524" r="5" fill="var(--green)"/>
+  <text class="pitem" x="1346" y="529">Safe defaults</text>
+  <circle cx="1328" cy="602" r="5" fill="var(--green)"/>
+  <text class="pitem" x="1346" y="598">Continuous</text><text class="pitem" x="1346" y="620">evidence</text>
+
+  <!-- PAVED ROAD MOTIF (horizontal, signature) -->
+  <rect x="320" y="352" width="968" height="250" rx="16" fill="var(--road)"/>
+  <line x1="330" y1="492" x2="1278" y2="492" stroke="var(--road-line)" stroke-width="3" stroke-dasharray="2 16" stroke-linecap="round" opacity="0.38"/>
+
+  <!-- 7 STEP CARDS -->
+  <!-- step 1 -->
+  <rect class="box" x="335" y="382" width="118" height="200" rx="12"/>
+  <circle cx="394" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="394" y="389" text-anchor="middle">1</text>
+  <text class="steplbl" x="394" y="440" text-anchor="middle">Propose</text><text class="steplbl" x="394" y="462" text-anchor="middle">Server</text>
+  <text class="stepsub" x="394" y="512" text-anchor="middle">Team defines</text><text class="stepsub" x="394" y="530" text-anchor="middle">use case</text>
+  <!-- step 2 -->
+  <rect class="box" x="473" y="382" width="118" height="200" rx="12"/>
+  <circle cx="532" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="532" y="389" text-anchor="middle">2</text>
+  <text class="steplbl" x="532" y="451" text-anchor="middle">Register</text>
+  <text class="stepsub" x="532" y="512" text-anchor="middle">Server, tools,</text><text class="stepsub" x="532" y="530" text-anchor="middle">owner</text>
+  <!-- step 3 -->
+  <rect class="box" x="611" y="382" width="118" height="200" rx="12"/>
+  <circle cx="670" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="670" y="389" text-anchor="middle">3</text>
+  <text class="steplbl" x="670" y="440" text-anchor="middle">Classify</text><text class="steplbl" x="670" y="462" text-anchor="middle">Risk</text>
+  <text class="stepsub" x="670" y="512" text-anchor="middle">Policy tier</text><text class="stepsub" x="670" y="530" text-anchor="middle">(1–5)</text>
+  <!-- step 4 -->
+  <rect class="box" x="749" y="382" width="118" height="200" rx="12"/>
+  <circle cx="808" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="808" y="389" text-anchor="middle">4</text>
+  <text class="steplbl" x="808" y="430" text-anchor="middle">Configure</text><text class="steplbl" x="808" y="452" text-anchor="middle">Gateway</text><text class="steplbl" x="808" y="474" text-anchor="middle">Controls</text>
+  <text class="stepsub" x="808" y="516" text-anchor="middle">Identity · Policy</text><text class="stepsub" x="808" y="534" text-anchor="middle">· Content safety</text>
+  <!-- step 5 -->
+  <rect class="box" x="887" y="382" width="118" height="200" rx="12"/>
+  <circle cx="946" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="946" y="389" text-anchor="middle">5</text>
+  <text class="steplbl" x="946" y="440" text-anchor="middle">Deploy via</text><text class="steplbl" x="946" y="462" text-anchor="middle">Governed CI/CD</text>
+  <text class="stepsub" x="946" y="512" text-anchor="middle">OIDC · Gates</text><text class="stepsub" x="946" y="530" text-anchor="middle">· Versioning</text>
+  <!-- step 6 -->
+  <rect class="box" x="1025" y="382" width="118" height="200" rx="12"/>
+  <circle cx="1084" cy="382" r="21" fill="var(--teal)"/><text class="badge" x="1084" y="389" text-anchor="middle">6</text>
+  <text class="steplbl" x="1084" y="440" text-anchor="middle">Emit Runtime</text><text class="steplbl" x="1084" y="462" text-anchor="middle">Lineage</text>
+  <text class="stepsub" x="1084" y="512" text-anchor="middle">Telemetry · Audit</text><text class="stepsub" x="1084" y="530" text-anchor="middle">· Evidence</text>
+  <!-- step 7 -->
+  <rect class="box" x="1163" y="382" width="118" height="200" rx="12"/>
+  <circle cx="1222" cy="382" r="21" fill="var(--purple)"/><text class="badge" x="1222" y="389" text-anchor="middle">7</text>
+  <text class="steplbl" x="1222" y="440" text-anchor="middle">Re-review</text><text class="steplbl" x="1222" y="462" text-anchor="middle">on Change</text>
+  <text class="stepsub" x="1222" y="512" text-anchor="middle">New tool ·</text><text class="stepsub" x="1222" y="530" text-anchor="middle">scope · system</text>
+
+  <!-- step arrows -->
+  <line x1="455" y1="492" x2="471" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+  <line x1="593" y1="492" x2="609" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+  <line x1="731" y1="492" x2="747" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+  <line x1="869" y1="492" x2="885" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+  <line x1="1007" y1="492" x2="1023" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+  <line x1="1145" y1="492" x2="1161" y2="492" stroke="var(--ink)" stroke-width="2.5" marker-end="url(#arrInk)"/>
+
+  <!-- CONTINUOUS LOOP (dashed purple = feedback) -->
+  <path d="M1222 582 L1222 672 L532 672 L532 584" fill="none" stroke="var(--purple)" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrPurple)"/>
+  <text class="loop" x="800" y="700" text-anchor="middle">Lifecycle is continuous</text>
+
+  <!-- PLATFORM PRIMITIVES STRIP -->
+  <rect class="panel" x="48" y="828" width="1504" height="48" rx="12"/>
+  <text class="label" x="68" y="857">Platform Primitives (Canonical Set)</text>
+  <circle cx="452" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="466" y="857">Registry</text>
+  <circle cx="606" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="620" y="857">Identity</text>
+  <circle cx="754" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="768" y="857">Policy</text>
+  <circle cx="880" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="894" y="857">CI/CD</text>
+  <circle cx="1000" cy="852" r="4" fill="var(--teal)"/><text class="chip" x="1014" y="857">Content safety</text>
+  <circle cx="1188" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="1202" y="857">Observability</text>
+  <circle cx="1378" cy="852" r="4" fill="var(--ink)"/><text class="chip" x="1392" y="857">Evidence</text>
+
+  <!-- FOOTER -->
+  <line x1="60" y1="936" x2="1540" y2="936" stroke="var(--hair)" stroke-width="1.5"/>
+  <text x="60" y="965" font-family="Inter,sans-serif" font-size="14.5">
+    <tspan font-weight="700" fill="var(--ink)">Governance continues after launch. </tspan><tspan font-weight="500" fill="var(--slate)">A read-only tool becomes risky when write access is added later.</tspan>
+  </text>
+  <rect x="1300" y="944" width="36" height="36" rx="9" fill="var(--ink)"/>
+  <path d="M1309 974 L1318 952 L1327 974" fill="none" stroke="var(--teal)" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="1312.5" y1="967" x2="1323.5" y2="967" stroke="var(--teal)" stroke-width="2.6"/>
+  <text class="wordmark" x="1348" y="963"><tspan fill="var(--ink)">Aara </tspan><tspan fill="var(--teal)">Minds</tspan></text>
+  <text class="tag" x="1349" y="981">Leadership · AI · Engineering</text>
+</svg>
+</div>
+
+</body>
+</html>
