@@ -15,8 +15,15 @@ Extracted from `classroom.emeritus.org/courses/17878` on 2026-05-25.
 | `06-Module5-Competing-in-Age-of-AI-Disruption.md` | Week 5 — Competing in the Age of AI Disruption (5 videos, Assignment 5.2) | 8 |
 | `07-Module6-Business-Strategy-Generative-AI.md` | Week 6 — Business Strategy in the Age of Generative AI (7 videos, Assignment 6.2) | 9 |
 | `08-Pre-Module-Essentials-and-Week7.md` | Pre-Module Essentials reading + Week 7: Foundations of Generative AI (10 videos) | 10, 11 |
+| `09-Week8-Prompt-Engineering.md` | Week 8 — Prompt Engineering and Techniques (13 videos: CoT, few/zero-shot, role-play, iterative, parameters, the 3 C's) | 12 |
+| `10-Module9-Leadership-with-Generative-AI.md` | Module 9 — Leadership with Generative AI (6 videos, jagged frontier, RAG, IP/ownership; Self-Study Assignment 9.1) | 13 |
+| `11-Module10-Leveraging-AI-for-Competitive-Advantage.md` | Module 10 — data value, AI readiness, analytics maturity, explainable AI, AgFinTech, Cropin case (Assignment 10.1) | 14 |
+| `12-Module11-Implementing-AI-in-Organisations.md` | Module 11 — implementation framework, Apollo Hospitals/CCDIV, org models, AI-skilled workforce, advocacy (Assignment 11.2) | 15 |
+| `13-Module12-Building-Blocks-to-Leadership.md` | Module 12 — Apollo 13 execution loop, leadership vs management, storytelling, culture, Nestlé/DBS cases | 16 |
 
-Total: **11 modules, 145 items** crawled.
+> **Update (June 2026):** Modules through Week 7 were the original May-25 crawl. **Week 8 and Modules 9–12 were added in June 2026** via the Canvas API through the enrolled browser session (course pages, video summaries, discussion and assignment prompts). The per-module "Video Transcript and Summary Deck" pages are course-provided downloadable PDFs, so verbatim transcripts for these newer modules are not reproduced — the lecture/concept summaries are captured in the module notes. Course also includes **Tool Demos** (TensorFlow, SORA, Stable Diffusion, DALL·E 3, Gemini) and **Python Code Demos** (Scikit-learn, PyTorch) as supplementary how-to pages.
+
+Original crawl: **11 modules, 145 items**. With the June additions, content is captured through **Module 12**.
 
 ## Lecture transcripts & summary decks
 
