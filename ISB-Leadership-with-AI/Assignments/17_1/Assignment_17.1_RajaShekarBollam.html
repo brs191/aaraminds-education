@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Assignment 17.1 - Implementing Responsible AI Using the NIST Framework</title>
+<style>
+ body{font-family:Aptos,Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#111;max-width:920px;margin:24px auto;padding:0 16px;}
+ h1{font-size:15pt;color:#1F3864;margin:0 0 2px;}
+ h2{font-size:12.5pt;color:#1F3864;margin:18px 0 6px;}
+ h3{font-size:11.5pt;color:#2E5496;margin:12px 0 3px;}
+ .sub{font-style:italic;color:#333;margin:0 0 10px;}
+ table{border-collapse:collapse;width:100%;margin:8px 0 14px;}
+ th,td{border:1px solid #bbb;padding:6px 9px;vertical-align:top;font-size:10.5pt;}
+ th{background:#D9EAF7;text-align:left;} p{margin:6px 0;} .mark{color:#8a5a00;}
+</style></head><body>
+
+<h1>Required Assignment 17.1: Implementing Responsible AI Principles Using the NIST Framework</h1>
+<p class="sub">ISB Certificate Programme in Leadership with AI &nbsp;|&nbsp; Approach Document</p>
+<p>Name: Raja Shekar Bollam &nbsp;&nbsp; Date: ______ &nbsp;&nbsp; Organisation: AT&amp;T (Business Technology Product Development / Sales Tooling)</p>
+
+<h2>1. Context</h2>
+<p>AT&amp;T&rsquo;s Sales Tooling ecosystem (Salesforce, ROME, ADOPT, SSP, Business Center) and the AI use cases we are introducing across the software development lifecycle and production support operate on sensitive customer, pricing, credit, and transaction data, and increasingly inform customer-facing sales and ordering decisions. That makes Responsible AI a precondition, not an afterthought. This document selects the three Responsible AI principles (from the NITI Aayog <em>Responsible AI for All</em> framework) most relevant to AT&amp;T and sets out an approach to operationalise them using the four functions of the <strong>NIST AI Risk Management Framework &mdash; Govern, Map, Measure, Manage</strong>.</p>
+
+<h2>2. Top Three Responsible AI Principles for AT&amp;T (and why)</h2>
+<table>
+<tr><th>Principle</th><th>Why it is most relevant to AT&amp;T</th></tr>
+<tr><td><strong>Privacy &amp; Security</strong></td><td>Our AI touches customer PII/CPNI, credit-check, billing, and transaction data. A privacy or security failure is both a regulatory and a trust risk at telecom scale.</td></tr>
+<tr><td><strong>Transparency &amp; Explainability</strong></td><td>AI-assisted outputs feed sales, pricing, credit, and production-support decisions. Engineers, sellers, auditors, and customers must be able to understand why an output was produced.</td></tr>
+<tr><td><strong>Accountability</strong></td><td>Business-critical, customer-impacting decisions require clear human ownership, review, and the ability to trace and contest an AI-influenced outcome &mdash; especially given automation of parts of the SDLC and production support.</td></tr>
+</table>
+<p>(Safety &amp; reliability is a close fourth given our production-critical systems, and is addressed within the Manage function below.)</p>
+
+<h2>3. Implementation Approach (NIST AI RMF: Govern &middot; Map &middot; Measure &middot; Manage)</h2>
+
+<h3>Principle 1 — Privacy &amp; Security</h3>
+<table>
+<tr><th>NIST function</th><th>Approach at AT&amp;T</th></tr>
+<tr><td>Govern</td><td>Data-protection and AI-use policy; role-based access and consent rules; an AI governance owner and AI SPOCs accountable for data handling.</td></tr>
+<tr><td>Map</td><td>Inventory which use cases process PII/CPNI, credit, and billing data; classify data sensitivity and legal basis per use case.</td></tr>
+<tr><td>Measure</td><td>Data-minimisation and de-identification checks; access-audit logs; security testing of AI pipelines; privacy-impact assessments.</td></tr>
+<tr><td>Manage</td><td>Enforce least-privilege access, encryption, and secure APIs; monitor for data leakage; incident-response runbook for AI data events.</td></tr>
+</table>
+
+<h3>Principle 2 — Transparency &amp; Explainability</h3>
+<table>
+<tr><th>NIST function</th><th>Approach at AT&amp;T</th></tr>
+<tr><td>Govern</td><td>Standard requiring documented model purpose, data lineage, and an explainability expectation for any customer- or revenue-impacting AI.</td></tr>
+<tr><td>Map</td><td>Identify decisions where a human, regulator, or customer may need to understand the &ldquo;why&rdquo; (e.g., pricing, credit, order routing).</td></tr>
+<tr><td>Measure</td><td>Model cards / documentation; explainability techniques for high-impact models; track the explainability-vs-accuracy trade-off explicitly.</td></tr>
+<tr><td>Manage</td><td>Provide reason codes and audit trails; disclose AI-assistance where appropriate; retire models that cannot be adequately explained for high-stakes use.</td></tr>
+</table>
+
+<h3>Principle 3 — Accountability</h3>
+<table>
+<tr><th>NIST function</th><th>Approach at AT&amp;T</th></tr>
+<tr><td>Govern</td><td>Named accountable owner per AI system; a model-risk review and approval gate before deployment; escalation and sign-off authority defined.</td></tr>
+<tr><td>Map</td><td>Map each AI output to the decision it influences and to the human who remains accountable for that decision.</td></tr>
+<tr><td>Measure</td><td>Track override rates, false-positive/negative rates, and review-coverage for customer-impacting outputs; periodic bias and performance audits.</td></tr>
+<tr><td>Manage</td><td>Mandatory human-in-the-loop for high-impact decisions; change control on production-affecting models; a customer-redress and appeal path.</td></tr>
+</table>
+
+<h2>4. Governance Summary</h2>
+<p>These three principles are operationalised through one governance spine: a Responsible-AI policy (Govern), a per-use-case risk register that maps data, decisions, and owners (Map), a standard measurement set of privacy, explainability, bias, and reliability checks (Measure), and enforced controls with human-in-the-loop review and incident response (Manage). This makes Responsible AI a repeatable engineering discipline across the Sales Tooling AI roadmap rather than a case-by-case judgement.</p>
+
+<p class="mark">[YOUR EXPERIENCE: adjust the chosen principles if you prefer a different top three, and add any AT&amp;T-specific policy names or metrics.]</p>
+
+<p><strong>References:</strong> NITI Aayog, <em>Responsible AI #AIForAll: Approach Document for India</em> (2021); NIST, <em>AI Risk Management Framework (AI RMF 1.0) and Playbook</em>.</p>
+</body></html>
